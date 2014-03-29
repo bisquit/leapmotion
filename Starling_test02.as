@@ -15,6 +15,7 @@ package
 			stage.align = StageAlign.TOP_LEFT;
 			stage.scaleMode = StageScaleMode.NO_SCALE;
 			
+			// Starlingの初期化
 //			Starling.handleLostContext = true;
 			var starling:Starling = new Starling(MainView, stage, null, null);
 //			starling.enableErrorChecking = false;
@@ -56,6 +57,7 @@ internal class MainView extends Sprite
 	}
 	
 	private function createStar():void{
+		// 星を生成して配列に格納、addChild
 		var star:Star = new Star(W, H, star_R);
 		starArr.push(star);
 		addChild(star);
@@ -116,6 +118,7 @@ class Star extends Sprite{
 		var num_min:Number = 0;
 		var num:Number = int( Math.random() * (num_max - num_min + 1) ) + num_min;
 		
+		// 四角形を生成
 		var quad:Quad = new Quad(20, 20, colorArr[num]);
 		addChild(quad);
 		
