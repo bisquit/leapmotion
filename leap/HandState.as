@@ -1,0 +1,1 @@
+﻿package  leap{		public class HandState {		public static const DEFAULT:int = 0		public static const CATCH:int = 1;		public static const COLLIDE:int = 2;	}	}
