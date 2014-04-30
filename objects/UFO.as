@@ -10,7 +10,11 @@ package objects
 		
 		public var vx:Number;
 		public var vy:Number;
-		public var acceleration:Number = 0.1;
+		public var vx_max:Number = 5;
+		public var vx_min:Number = -5;
+		public var vy_max:Number = 0;
+		public var vy_min:Number = -3;
+		public var acceleration:Number = 0;
 		public var point:Number = -10;
 		public var delete_flag:Boolean = false;
 		
@@ -30,10 +34,10 @@ package objects
 			this.x = int( Math.random() * (x_max - x_min + 1) ) + x_min;
 			this.y = int( Math.random() * (y_max - y_min + 1) ) + y_min;
 			
-			var vx_min:Number = -3;
-			var vx_max:Number = -1;
-			var vy_min:Number = 3;
-			var vy_max:Number = 3;
+			vx_min = -3;
+			vx_max = -1;
+			vy_min = 3;
+			vy_max = 3;
 			
 			this.vx = int( Math.random() * (vx_max - vx_min + 1) ) + vx_min;
 			this.vy = int( Math.random() * (vy_max - vy_min + 1) ) + vy_min;
