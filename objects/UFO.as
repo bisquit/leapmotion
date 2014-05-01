@@ -40,19 +40,24 @@ package objects
 			
 			if(rand_id <= 0.17){
 				ufo_img = new UFO01Img();
+				ufo_img.scaleX = ufo_img.scaleY = 0.3;
 			} else if(rand_id <= 0.34){
 				ufo_img = new UFO02Img();
+				ufo_img.scaleX = ufo_img.scaleY = 0.6;
 			} else if(rand_id <= 0.51){
 				ufo_img = new UFO03Img();
+				ufo_img.scaleX = ufo_img.scaleY = 0.6;
 			} else if(rand_id <= 0.68){
 				ufo_img = new UFO04Img();
+				ufo_img.scaleX = ufo_img.scaleY = 0.6;
 			} else if(rand_id <= 0.85){
 				ufo_img = new UFO05Img();
+				ufo_img.scaleX = ufo_img.scaleY = 0.6;
 			} else {
 				ufo_img = new UFO06Img();
+				ufo_img.scaleX = ufo_img.scaleY = 0.6;
 			}
 			
-			ufo_img.scaleX = ufo_img.scaleY = 0.3;
 			ufo_img.x = -ufo_img.width/2;
 			ufo_img.y = -ufo_img.height/2;
 			addChild(ufo_img);
