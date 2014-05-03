@@ -1,1 +1,1 @@
-﻿package  phase {		public interface IPhase {			function start():void;		function destroy():void;	}	}
+﻿package  phase {		public interface IPhase {			function start():void;		function destroy():void;		function afterCatch():void;	}	}
