@@ -1,1 +1,1 @@
-﻿package  phase {		public interface IPhase {			function start():void;		function destroy():void;		function afterCatch():void;	}	}
+﻿package  phase {	import flash.geom.Point;		public interface IPhase {			function start():void;		function destroy():void;		function afterCatch(info:Object):void;	}	}
