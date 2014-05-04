@@ -1,1 +1,1 @@
-﻿package  phase {	import flash.geom.Point;		public interface IPhase {			function start():void;		function destroy():void;		function afterCatch(info:Object):void;	}	}
+﻿package  phase {	import flash.geom.Point;		public interface IPhase {				/* 実際に画面に追加された時の処理 */		function start():void;				/* 画面から削除される時の後処理 removeEventListener等 */		function destroy():void;				/* 画面に配置された任意のオブジェクトがキャッチされた時		  * そのx,y座標等を格納したinfoオブジェクトを伴って呼び出される */		function afterCatch(info:Object = null):void;	}	}
