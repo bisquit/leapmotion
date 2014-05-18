@@ -11,7 +11,7 @@
 
   mysqli_set_charset($db_link,"utf8");
 
-  $select = mysqli_query( $db_link, 'SELECT * FROM score_rank ORDER BY score DESC, id DESC LIMIT 0, 3');
+  $select = mysqli_query( $db_link, 'SELECT * FROM score_rank ORDER BY score DESC, id DESC LIMIT 0, 8');
 
   $json = array();
   $data = array();
