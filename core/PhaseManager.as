@@ -2,4 +2,11 @@
 			
 			// ゲーム中の音楽を流す
 			SoundManager.play("bustling", true, 0.8);
-						level = 2;						Phases[level + 1].destroy();			Phases[level++].start();						}	}	}
+						level = 2;						Phases[level + 1].destroy();			Phases[level++].start();						}
+		
+		public static function restart():void {
+			Phases[3].destroy();
+			
+			level = 0;
+			Phases[level++].start();
+		}	}	}
